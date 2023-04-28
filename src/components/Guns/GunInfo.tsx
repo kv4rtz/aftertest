@@ -12,11 +12,13 @@ const GunInfo = ({gun}: {gun: IGunsSpecifications}) => {
         <div className={styles.wrapper}>
             <div className={styles.spec}>
                 <ul className={styles.data}>
+                    {/* tslint:disable */}
                     <li>Damage<div className={styles.scale} style={{"--scale": `${percent(gun.damage, 690)}%`}}></div></li>
                     <li>Range<div className={styles.scale} style={{"--scale": `${percent(gun.range, 17)}%`}}></div></li>
                     <li>Fire rate<div className={styles.scale} style={{"--scale": `${percent(gun.firerate, 750)}%`}}></div></li>
                     <li>Accuracy<div className={styles.scale} style={{"--scale": `${percent(gun.accuracy, 76)}%`}}></div></li>
                     <li>Recoil<div className={styles.scale} style={{"--scale": `${percent(gun.recoil, 100)}%`}}></div></li>
+                    {/* tslint:enable */}
                 </ul>
                 <div className={styles.rounds}><p>Rounds</p><p>{gun.rounds}</p></div>
             </div>
