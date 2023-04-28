@@ -3,7 +3,7 @@ import styles from './Guns.module.css'
 import Image from "next/image"
 
 const GunInfo = ({gun}: {gun: IGunsSpecifications}) => {
-    const percent = (min, max) => {
+    const percent = (min: number, max: number) => {
         if (min === max) return 100;
         return 100 - Math.floor(((max-min)/max)*100)
     }
